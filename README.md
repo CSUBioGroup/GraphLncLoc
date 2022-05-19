@@ -73,7 +73,7 @@ The *test_set.txt* in *Independent_test_set* folder is used in comparison with o
 The other details can be seen in the paper and the codes.
 
 # Citation
-Min Li, Baoying Zhao, Rui Yin, Chengqian Lu, Min Zeng. GraphLncLoc: long non-coding RNA subcellular locali-zation prediction using graph convolutional networks based on sequence to graph transformation
+Min Li, Baoying Zhao, Rui Yin, Chengqian Lu, Fei Guo, Min Zeng. GraphLncLoc: long non-coding RNA subcellular locali-zation prediction using graph convolutional networks based on sequence to graph transformation
 
 # License
 This project is licensed under the MIT License - see the LICENSE.txt file for details
