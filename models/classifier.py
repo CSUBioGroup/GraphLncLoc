@@ -31,7 +31,7 @@ class BaseClassifier:
         pass
 
     def cv_train(self, dataset, batchSize=32, num_epochs=10, lr=0.001, kFold=5, savePath='checkpoints/', earlyStop=100,
-                 seed=10,device='cpu'):
+                 seed=10,device=t.device('cpu')):
         splits = StratifiedKFold(n_splits=kFold, shuffle=True, random_state=10)
         fold_best = []
         if not os.path.exists(savePath):
