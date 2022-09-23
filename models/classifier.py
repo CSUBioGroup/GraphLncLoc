@@ -23,7 +23,7 @@ def setup_seed(seed):
     random.seed(seed)
     t.backends.cudnn.deterministic = True
 
-seed_array=[983, 523, 697, 689, 523]    # Set model seed
+array=[983, 523, 697, 689, 523]
 
     
 class BaseClassifier:
@@ -38,7 +38,7 @@ class BaseClassifier:
             os.mkdir(savePath)
         for fold, (train_idx, val_idx) in enumerate(splits.split(dataset[:][0],dataset[:][1])):
             savePath2 = savePath + f"fold{fold + 1}"
-            setup_seed(seed_array[fold])
+            setup_seed(array[fold])
             self.reset_parameters()
             best_f = 0.0
             print('>>>>>>Fold{}'.format(fold + 1))
