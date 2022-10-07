@@ -171,7 +171,7 @@ class LncRNADataset(DGLDataset):
         elif method == 'kmers':
             enc = OneHotEncoder(categories='auto')
             enc.fit([[i] for i in self.kmers2id.values()])
-            feaSize = len(self.kmers2id)-1
+            feaSize = len(self.kmers2id)
             kmers = np.zeros((len(self.labels), feaSize))
             bs = 50000
             print('Getting the kmers vector...')
