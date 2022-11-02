@@ -4,7 +4,7 @@ mapLocation = {'cuda:0': 'cpu', 'cuda:1': 'cpu'}
 GraphLncLoc = []
 for i in range(1, 6):
     GraphLncLoc.append(
-        lncRNALocalizer(weightPath=f"checkpoints/Final_model/fold{i}_dc.pkl", double_c4=True, map_location=mapLocation))
+        lncRNALocalizer(weightPath=f"Final_model/fold{i}_dc.pkl", double_c4=True, map_location=mapLocation))
 
 
 def lncRNA_loc_predict(lncRNA):
