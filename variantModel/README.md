@@ -9,7 +9,7 @@
 
 # Usage
 ## How to do prediction
-In the following, take the four-category (cytoplasm, nucleus, ribosome, exosome) prediction task as an example:
+In the following, take the five-category (cytoplasm, nucleus, ribosome, exosome, cytosol) prediction task as an example:
 
 First, import the package. 
 ```python
