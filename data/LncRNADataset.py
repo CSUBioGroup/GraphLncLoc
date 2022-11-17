@@ -108,7 +108,7 @@ class LncRNADataset(DGLDataset):
             norm = EdgeWeightNorm(norm='both')
             norm_weight = norm(graph, weight)
             graph.edata['weight'] = norm_weight
-            node_features = self.vector['embedding'][list(old2new.keys())][:]
+            node_features = self.vector['embedding'][list(old2new.keys())]
             graph.ndata['attr'] = t.tensor(node_features)
             self.graphs.append(graph)
             
