@@ -43,7 +43,6 @@ class BaseClassifier:
             best_f = 0.0
             print('>>>>>>Fold{}'.format(fold + 1))
             train_sampler = SubsetRandomSampler(train_idx)
-
             test_sampler = SubsetRandomSampler(val_idx)
             train_loader = GraphDataLoader(dataset, batch_size=batchSize, sampler=train_sampler, num_workers=4)
             test_loader = GraphDataLoader(dataset, batch_size=batchSize, sampler=test_sampler, num_workers=4)
